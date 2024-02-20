@@ -1,0 +1,530 @@
+$public_red_bg: #FF004F;
+$public_blue_bg: #00F2EA;
+
+.el-input.is-focus .el-input__wrapper,
+.el-textarea__inner:focus,
+.el-input__wrapper.is-focus {
+  box-shadow: 0 0 0 1px #FFFFFF inset !important;
+}
+
+.applocationTime {
+
+  .el-date-table td.today .el-date-table-cell__text,
+  .el-time-panel__btn.confirm {
+    color: #8206F9;
+  }
+
+  .el-date-table td.current:not(.disabled) .el-date-table-cell__text {
+    background-color: #8206F9;
+  }
+
+  .available:hover .el-date-table-cell__text {
+    color: #8206F9;
+  }
+
+}
+
+.el-scrollbar:nth-of-type(2) {
+
+  .el-time-spinner__list::after,
+  .el-time-spinner__list::before {
+    height: 80px !important;
+  }
+}
+
+.el-scrollbar:nth-of-type(3) {
+
+  .el-time-spinner__list::after,
+  .el-time-spinner__list::before {
+    height: 85px !important;
+  }
+}
+
+
+.marTop16 {
+  margin-top: 16px;
+}
+
+.el-input__wrapper.is-focus {
+  box-shadow: none;
+}
+
+.ds-grid-2 {
+  display: grid;
+  justify-content: space-between;
+  grid-template-columns: repeat(2, calc(48%));
+}
+
+.ds-grid-5 {
+  display: grid;
+  justify-content: space-between;
+  grid-template-columns: repeat(5, calc(19%));
+}
+
+.ds-grid-6 {
+  display: grid;
+  justify-content: space-between;
+  grid-template-columns: repeat(6, calc(17%));
+}
+
+.ds-flex-nocenter {
+  display: flex;
+}
+
+.ds-flex-nocenterSpaween {
+  display: flex;
+  justify-content: space-between;
+}
+
+.ds-flex {
+  display: flex;
+  align-items: center;
+}
+
+.ds-flex-spaween {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.ds-flex-wrap {
+  flex-wrap: wrap;
+}
+
+.ds-flex-justEnd {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.ds-flex-alignENd {
+  display: flex;
+  align-items: flex-end;
+}
+
+.ds-flex-alignStart {
+  display: flex;
+  align-items: flex-start;
+}
+
+.ds-flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ds-flex-justIfycenter {
+  display: flex;
+  justify-content: center;
+}
+
+.ds-flex-spaound {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.ds-flex-cloum-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.ds-flex-cloum-end {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.ds-flex-cloum-start {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.ds-flex-cloum-spawen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.clamp-Line-2 {
+  word-break: break-all;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+
+.clamp-Line-1 {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.box-sizi {
+  box-sizing: border-box;
+}
+
+.model-mask {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 88;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(3, 4, 33, 0.86);
+}
+
+.list-end {
+  color: #666;
+  font-size: 16px;
+}
+
+.global-error-prompt {
+  @extend .ds-flex;
+  width: 8.93rem;
+  height: 1.92rem;
+  background-color: #4247D3;
+  border-radius: 15px;
+  animation: fade-in;
+  /*动画名称*/
+  animation-duration: 1s;
+  /*动画持续时间*/
+  -webkit-animation: fade-in 1s;
+  /*针对webkit内核*/
+
+
+  .img {
+    width: 1.6rem;
+    height: 1.92rem;
+    border-radius: 15px 0 0 15px;
+    background-color: #4756FF;
+    @extend .ds-flex-center;
+
+    .icon {
+      width: 30px;
+      height: 30px;
+    }
+  }
+
+  .prompt {
+    box-sizing: border-box;
+    font-size: 14px;
+    color: #ffffff;
+    word-spacing: 0;
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: normal;
+
+    .con {
+      margin: 18px 15px;
+      line-height: 18px;
+      width: 6.53rem;
+      text-align: left;
+      word-break: keep-all;
+      word-wrap: break-word;
+    }
+  }
+}
+
+.van-overlay {
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(8px);
+}
+
+.gradient-bottom::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  content: "";
+  width: 100%;
+  height: 5px;
+  background: linear-gradient(to right, $public_blue_bg, $public_red_bg);
+}
+
+.gradient-top::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  width: 100%;
+  height: 5px;
+  background: linear-gradient(to right, $public_blue_bg, $public_red_bg);
+}
+
+.public-btn {
+  position: relative;
+  min-width: 120px;
+  width: 100%;
+  height: 50px;
+  cursor: pointer;
+
+  span {
+    @extend .ds-flex-center, .box-sizi;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+    font-weight: 600;
+    font-size: 19px;
+    color: #000;
+    background-color: #fff;
+    border-radius: 30px;
+    white-space: nowrap;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.public-btn::after {
+  position: absolute;
+  z-index: 1;
+  content: "";
+  top: -3px;
+  left: -1px;
+  background-color: $public_blue_bg;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+}
+
+.public-btn::before {
+  position: absolute;
+  z-index: 1;
+  content: "";
+  bottom: -3px;
+  right: -1px;
+  background-color: $public_red_bg;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+}
+
+.start-btn,
+.public-50btn-disable {
+  @extend .public-btn;
+  opacity: 0.5;
+}
+
+
+.big-btn {
+  @extend .public-btn;
+  width: 100%;
+  height: 60px;
+}
+
+.small-btn {
+  @extend .public-btn;
+
+  span {
+    font-size: 16px;
+  }
+}
+
+.small-btn::after {
+  top: -2px;
+}
+
+.small-btn::before {
+  bottom: -2px;
+}
+
+.small-btn-dis {
+  @extend .small-btn;
+  opacity: 0.5;
+}
+
+.disable-btn {
+  cursor: no-drop;
+  opacity: 0.5;
+}
+
+@keyframes fade-in {
+  0% {
+    margin-left: 10rem;
+  }
+
+  100% {
+    margin-left: 0;
+  }
+
+}
+
+@-webkit-keyframes fade-in {
+
+  /*针对webkit内核*/
+  0% {
+    margin-left: 10rem;
+  }
+
+  100% {
+    margin-left: 0;
+  }
+}
+
+.public-logo {
+  position: relative;
+  width: 54px;
+  height: 54px;
+
+  .user-image {
+    @extend .box-sizi;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: linear-gradient(180deg, #F22F51 0%, #29E5E5 100%);
+    padding: 1px;
+
+    img {
+      position: relative;
+      z-index: 2;
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+    }
+  }
+}
+
+.nav-logo {
+  @extend .public-logo;
+  width: 75px;
+  height: 75px;
+}
+
+.changeAddress-logo {
+  @extend .public-logo;
+  width: 88px;
+  height: 88px;
+}
+
+.big-logo {
+  @extend .public-logo;
+  width: 180px;
+  height: 180px;
+
+  .pad {
+    padding: 5px;
+  }
+}
+
+
+.van-toast {
+  width: 150px;
+}
+
+.van-toast__text {
+  word-break: break-word;
+}
+
+.preview-wrap .preview .close-icon {
+  right: 190px !important;
+  top: 200px !important;
+}
+
+
+
+.clamp-Line-3 {
+  word-break: break-all;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+}
+
+.clamp-Line-1 {
+  word-break: break-all;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+// 没有数据的时候骨架展示
+.skeleton-loading-no-data {
+  height: 10px;
+  width: 100px;
+  background-color: #f1f1f1;
+  border-radius: 4px;
+  animation: skeleton-loading 2s infinite;
+}
+
+@keyframes skeleton-loading {
+  0% {
+    background-color: #202025;
+  }
+
+  50% {
+    background-color: #43434C;
+  }
+
+  100% {
+    background-color: #202025;
+  }
+}
+
+
+.list-end,
+.loading {
+  width: 100%;
+  text-align: center;
+}
+
+.more-all {
+  margin-top: 20px;
+  padding-bottom: 20px;
+
+  .btn {
+    width: 180px;
+    height: 43px;
+    background: #262626;
+    border-radius: 22px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #999999;
+  }
+}
+
+.public-bor-btn {
+  width: 100%;
+  height: 59px;
+  border-radius: 16px;
+  border: 2px solid rgba(255, 255, 255, 0.7);
+  font-size: 24px;
+  font-family: FiraMono-Medium;
+  font-weight: 500;
+  color: #FFFFFF;
+}
+
+.public-bor-btn:hover {
+  border-color: #ffffff;
+}
+
+.public-bor-btn:active {
+  background: #FFFFFF;
+  color: #000000;
+}
+
+.public-slo-btn {
+  width: 100%;
+  height: 59px;
+  background: #FFFFFF;
+  border-radius: 16px;
+  font-size: 24px;
+  font-family: FiraMono-Medium;
+  font-weight: 500;
+  color: #000;
+}
+
+.public-slo-btn:hover {
+  opacity: 0.8;
+}
+
+.public-slo-btn:active {
+  opacity: 1;
+}

@@ -1,0 +1,272 @@
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+input,
+textarea,
+p,
+blockquote,
+th,
+td,
+header,
+hgroup,
+nav,
+section,
+article,
+aside,
+footer,
+figure,
+figcaption,
+menu,
+button {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+ul,
+ol {
+    list-style-type: none;
+}
+
+li {
+    list-style: none;
+}
+
+select,
+input,
+img,
+select {
+    vertical-align: middle;
+}
+
+em,
+i {
+    font-style: normal;
+}
+
+a {
+    outline: 0;
+    color: inherit;
+    font-size: inherit;
+    text-decoration: none;
+    -webkit-touch-callout: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+a:link {
+    color: inherit;
+}
+
+a:visited {
+    color: inherit;
+}
+
+a:hover,
+a:active,
+a:focus {
+    color: inherit;
+    text-decoration: none;
+}
+
+a,
+button,
+input,
+select,
+textarea,
+a:focus,
+button:focus,
+input:focus,
+select:focus,
+textarea:focus,
+[onclick] {
+    outline: 0;
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+}
+
+button {
+    cursor: pointer;
+}
+
+input,
+button,
+textarea,
+select {
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    border: 0;
+    background: none;
+    -webkit-appearance: none;
+    outline: 0;
+}
+
+::-webkit-input-placeholder {
+    color: #999999;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+input[type='number'] {
+    -moz-appearance: textfield;
+}
+
+/* 常用 css */
+.clearfix:after {
+    content: '';
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.ellipsis {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.hide-important {
+    display: none !important;
+}
+
+.user-select-able {
+    user-select: text;
+    -moz-user-select: text;
+    -webkit-user-select: text;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+    background-color: #030421;
+}
+
+body {
+    width: 100%;
+    min-width: 1280px;
+    min-height: 100%;
+    background: #04040a;
+    color: #ffffff;
+}
+
+#app,
+.header-box {
+    min-width: 1280px;
+}
+
+@font-face {
+    font-family: DMSans-Bold;
+    src: url('../fonts/DM-sans/DMSans-Bold.ttf');
+  }
+  
+  @font-face {
+    font-family: DMSans-Medium;
+    src: url('../fonts/DM-sans/DMSans-Medium.ttf');
+  }
+  
+  @font-face {
+    font-family: DMSans-Regular;
+    src: url('../fonts/DM-sans/DMSans-Regular.ttf');
+  }
+  
+  @font-face {
+    font-family: ProtoMono-Light-Shadow;
+    src: url('../fonts/Proto-Mono-Light-Shadow.ttf');
+  }
+  
+  @font-face {
+    font-family: PlusJakartaSans-Bold;
+    src: url('../fonts/Plus-JakartaSans/PlusJakartaSans-Bold.ttf');
+  }
+  
+  @font-face {
+    font-family: PlusJakartaSans-Medium;
+    src: url('../fonts/Plus-JakartaSans/PlusJakartaSans-Medium.ttf');
+  }
+  @font-face {
+    font-family: PlusJakartaSans-Regular;
+    src: url('../fonts/Plus-JakartaSans/PlusJakartaSans-Regular.ttf');
+  }
+  @font-face {
+    font-family: PlusJakartaSans-SemiBold;
+    src: url('../fonts/Plus-JakartaSans/PlusJakartaSans-SemiBold.ttf');
+  }
+
+.el-notification.ToastFailPrompt {
+    background: #000000;
+    border-radius: 7px;
+    border: 1px solid #E83657;
+}
+
+.el-notification.ToastFailPrompt img {
+    width: 21px;
+    height: 21px;
+}
+
+.el-notification.ToastFailPrompt .el-notification__content {
+    color: #E83657;
+    font-size: 16px;
+}
+
+.el-notification.ToastFailPrompt .el-notification__content span {
+    display: inline-block;
+    margin-top: 2px;
+}
+
+.el-notification.ToastSuccessPrompt {
+    border: 1px solid #33CB79;
+}
+
+.el-notification.ToastSuccessPrompt .el-notification__content {
+    color: #33CB79;
+}
+
+.el-notification.ToastSuccessPrompt .el-notification__group,
+.el-notification.ToastFailPrompt .el-notification__group {
+    margin-left: 0;
+}
+
+.el-notification.ToastSuccessPrompt .el-notification__content,
+.el-notification.ToastFailPrompt .el-notification__content {
+    text-align: left;
+}
+
+.el-notification.ToastSuccessPrompt .el-notification__content p,
+.el-notification.ToastFailPrompt .el-notification__content p {
+    display: flex;
+}
+
+.el-notification.ToastSuccessPrompt .el-notification__content p img,
+.el-notification.ToastFailPrompt .el-notification__content p img {
+    margin-top: 2px;
+    margin-right: 9px;
+}
+
+.el-overlay {
+    backdrop-filter: blur(10px);
+}
